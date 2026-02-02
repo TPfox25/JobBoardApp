@@ -1,3 +1,4 @@
+import "graphql-import-node";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 import {
     resolvers as userResolvers,

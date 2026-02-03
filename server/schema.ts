@@ -1,6 +1,10 @@
 import "graphql-import-node";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 import {
+    typeDefs as scalarTypeDefs,
+    resolvers as scalarResolvers,
+} from "./scalars";
+import {
     resolvers as userResolvers,
     typeDefs as userTypeDefs,
 } from "./entities/user";

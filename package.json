@@ -48,8 +48,11 @@
     "start:client": "react-scripts start",
     "start:server": "tsx watch server/index.ts",
     "migrate": "prisma migrate dev --schema=./server/prisma/schema.prisma",
-    "codegen": "graphql-codegen --config codegen.ts && npx prisma generate --schema=./server/prisma/schema.prisma",
+    "codegen": "graphql-codegen --config codegen.ts && npx prisma generate",
     "seed": "rm -f server/prisma/dev.db && npm run migrate && tsx server/prisma/seed.ts"
+  },
+  "prisma": {
+    "schema": "server/prisma/schema.prisma"
   },
   "eslintConfig": {
     "extends": [
